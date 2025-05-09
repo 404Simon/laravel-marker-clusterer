@@ -20,7 +20,7 @@
     "require": {
         "php": "^7.4|^8.0",
         "illuminate/support": ">=5.1",
-        "spatie/data-transfer-object": "2.8.3",
+        "spatie/data-transfer-object": ">=3.9",
         "league/geotools": ">=0.8.3"
     },
     "require-dev": {
@@ -53,6 +53,11 @@
                 "KMeansClusterer": "EmilKlindt\\MarkerClusterer\\Clusterers\\KMeansClusterer",
                 "DensityBasedSpatialClusterer": "EmilKlindt\\MarkerClusterer\\Clusterers\\DensityBasedSpatialClusterer"
             }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
         }
     }
 }
